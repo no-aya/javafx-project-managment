@@ -1,0 +1,20 @@
+
+
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #34274e;
+}
+
+.jfx-tab-pane .tab-selected-line {
+    -fx-background-color: #ffffff;
+}
+
+.tab {
+    -fx-pref-width: 200;
+    -fx-pref-height: 60;
+}
+
+.tab .tab-label {
+    -fx-font-size: 12pt;
+    -fx-font-family: "Gill Sans MT";
+    -fx-font-weight: 300;
+}
