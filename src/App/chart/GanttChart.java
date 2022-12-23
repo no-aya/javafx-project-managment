@@ -5,11 +5,9 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Date;
-import java.util.GregorianCalendar;
 
-import App.Connect;
+import App.dao.*;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.scene.Scene;
@@ -34,8 +32,8 @@ public class GanttChart extends Application {
     public void start(Stage stage) throws Exception {
 
         try {
-            Connect connect =new Connect();
-            Connection connection=connect.getConnection();
+            SingletonConnexionDB singletonConnexionDB =new SingletonConnexionDB();
+            Connection connection= singletonConnexionDB.getConnection();
 
             Statement statement = connection.createStatement();
             String sql = "SELECT task_name,task_start_date,task_end_date FROM project_task WHERE project_id = "+1;

@@ -1,8 +1,7 @@
-package App.AdminProfile;
-
+package App;
 
 import App.dao.*;
-import App.IntroPageAdmin;
+
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
@@ -19,38 +18,39 @@ import java.sql.PreparedStatement;
 import java.sql.*;
 import java.util.ResourceBundle;
 
-public class AdminProfile implements Initializable {
-    private int adminId;
+
+public class EmployeeProfile implements Initializable {
+    private int empId;
     private String UserRole;
 
     public String getUserRole(){ return UserRole; }
 
     public void setUserRole(String userRole){ this.UserRole=userRole; }
 
-    public int getAdminId(){ return adminId; }
+    public int getEmpId(){ return empId; }
 
-    public void setAdminId(int adminid){ this.adminId=adminid; }
+    public void setEmpId(int adminid){ this.empId =adminid; }
 
     public JFXButton homeBackBtn;
     public JFXButton editProfileBtn;
     public JFXButton saveBtn;
-    public JFXTextField adminIdText;
-    public JFXTextField adminNameText;
-    public JFXTextField adminUsernameText;
-    public JFXTextField adminPassText;
-    public JFXTextField adminDesText;
-    public JFXTextField adminEmailText;
-    public JFXTextField adminContactText;
+    public JFXTextField empIdText;
+    public JFXTextField empNameText;
+    public JFXTextField empUsernameText;
+    public JFXTextField empPassText;
+    public JFXTextField empDesText;
+    public JFXTextField empEmailText;
+    public JFXTextField empContactText;
 
     public Label confirmationMsg;
 
-    public void setAdminInfo() throws SQLException {
+    public void setEmpInfo() throws SQLException {
         SingletonConnexionDB singletonConnexionDB = new SingletonConnexionDB();
         Connection connection = singletonConnexionDB.getConnection();
         Statement statement = connection.createStatement();
 
-        String sql = "SELECT * FROM ADMIN WHERE id="+adminId;
-        String sql2 = "SELECT * FROM ADMIN_AUTH WHERE id="+adminId;
+        String sql = "SELECT * FROM EMPLOYEE WHERE id="+ empId;
+        String sql2 = "SELECT * FROM EMPLOYEE_AUTH WHERE id="+ empId;
 
         ResultSet rs = statement.executeQuery(sql);
 
@@ -58,16 +58,14 @@ public class AdminProfile implements Initializable {
             int id = rs.getInt("id");
             String name = rs.getString("name");
             String desig = rs.getString("designation");
-
             String email = rs.getString("email");
             String contact = rs.getString("contact");
 
-            adminNameText.setText(name);
-            adminIdText.setText(String.valueOf(id));
-            adminDesText.setText(desig);
-            adminEmailText.setText(email);
-            adminContactText.setText(contact);
-
+            empNameText.setText(name);
+            empIdText.setText(String.valueOf(id));
+            empDesText.setText(desig);
+            empEmailText.setText(email);
+            empContactText.setText(contact);
         }
 
         ResultSet rs2 = statement.executeQuery(sql2);
@@ -76,8 +74,8 @@ public class AdminProfile implements Initializable {
             String username = rs2.getString("username");
             String pass = rs2.getString("password");
 
-            adminUsernameText.setText(username);
-            adminPassText.setText(pass);
+            empUsernameText.setText(username);
+            empPassText.setText(pass);
         }
     }
 
@@ -86,18 +84,18 @@ public class AdminProfile implements Initializable {
         saveBtn.setVisible(false);
         saveBtn.setDisable(true);
 
-        adminNameText.setEditable(false);
-        adminPassText.setEditable(false);
-        adminDesText.setEditable(false);
-        adminContactText.setEditable(false);
-        adminEmailText.setEditable(false);
+        empNameText.setEditable(false);
+        empPassText.setEditable(false);
+        empDesText.setEditable(false);
+        empContactText.setEditable(false);
+        empEmailText.setEditable(false);
     }
 
     public void homeBackBtnAction(ActionEvent event) {
         if(event.getSource() == homeBackBtn){
             FXMLLoader Loader = new FXMLLoader();
 
-            Loader.setLocation(getClass().getResource("../IntroPageAdmin/IntroPageAdmin.fxml"));
+            Loader.setLocation(getClass().getResource("presentation/views/IntroPageEmployee.fxml"));
 
             try {
                 Loader.load();
@@ -105,10 +103,11 @@ public class AdminProfile implements Initializable {
                 e.printStackTrace();
             }
 
-            IntroPageAdmin introPageAdmin = Loader.getController();
-            introPageAdmin.setAdminId(adminId);
-            introPageAdmin.setUserRole(getUserRole());
-            introPageAdmin.getAdminName(adminId);
+            IntroPageEmployee introPageEmployee = Loader.getController();
+            introPageEmployee.setEmployeeId(empId);
+            introPageEmployee.setUserRole(getUserRole());
+            introPageEmployee.getEmployeeName(empId);
+            introPageEmployee.getProjectTableData();
 
             Parent p = Loader.getRoot();
             Stage stage = (Stage) homeBackBtn.getScene().getWindow();
@@ -124,23 +123,22 @@ public class AdminProfile implements Initializable {
             saveBtn.setDisable(false);
             saveBtn.setVisible(true);
 
-            adminNameText.setEditable(true);
-            adminPassText.setEditable(true);
-            adminDesText.setEditable(true);
-            adminEmailText.setEditable(true);
-            adminContactText.setEditable(true);
+            empNameText.setEditable(true);
+            empPassText.setEditable(true);
+            empEmailText.setEditable(true);
+            empContactText.setEditable(true);
         }
     }
 
     public void saveBtnAction(ActionEvent event) {
         if(event.getSource() == saveBtn){
-            String adminName = adminNameText.getText();
-            String adminPass = adminPassText.getText();
-            String adminDes = adminDesText.getText();
-            String adminEmail = adminEmailText.getText();
-            String adminContact = adminContactText.getText();
+            String empName = empNameText.getText();
+            String empPass = empPassText.getText();
+            String empDes = empDesText.getText();
+            String empEmail = empEmailText.getText();
+            String empContact = empContactText.getText();
 
-            if(adminName.trim().isEmpty() || adminPass.trim().isEmpty() || adminDes.trim().isEmpty()){
+            if(empName.trim().isEmpty() || empPass.trim().isEmpty() || empDes.trim().isEmpty()){
                 confirmationMsg.setText("Please fill up the form correctly.");
                 return;
             }
@@ -149,34 +147,36 @@ public class AdminProfile implements Initializable {
             Connection connection = singletonConnexionDB.getConnection();
 
             try{
-                String sql = "UPDATE ADMIN set name=?, designation=?, email =?, contact =? WHERE id=?";
+                String sql = "UPDATE EMPLOYEE set name=?, designation=?, email =?, contact =? WHERE id=?";
 
                 PreparedStatement preparedStmt = connection.prepareStatement(sql);
-                preparedStmt.setString(1, adminName);
-                preparedStmt.setString(2, adminDes);
-                preparedStmt.setString(3, adminEmail);
-                preparedStmt.setString(4, adminContact);
-                preparedStmt.setInt(5,adminId);
+                preparedStmt.setString(1, empName);
+                preparedStmt.setString(2, empDes);
+                preparedStmt.setString(3, empEmail);
+                preparedStmt.setString(4, empContact);
+                preparedStmt.setInt(5, empId);
 
                 preparedStmt.executeUpdate();
 
-                String sql2 = "UPDATE ADMIN_AUTH set password=? WHERE id=?";
+                String sql2 = "UPDATE EMPLOYEE_AUTH set password=? WHERE id=?";
 
                 PreparedStatement ps_auth = connection.prepareStatement(sql2);
-                ps_auth.setString(1,adminPass);
-                ps_auth.setInt(2,adminId);
+                ps_auth.setString(1,empPass);
+                ps_auth.setInt(2, empId);
 
                 ps_auth.executeUpdate();
 
                 saveBtn.setDisable(true);
                 saveBtn.setVisible(false);
-                adminNameText.setEditable(false);
-                adminPassText.setEditable(false);
-                adminDesText.setEditable(false);
-                adminEmailText.setEditable(false);
-                adminContactText.setEditable(false);
+                empNameText.setEditable(false);
+                empPassText.setEditable(false);
+                empDesText.setEditable(false);
+                empEmailText.setEditable(false);
+                empContactText.setEditable(false);
+
                 confirmationMsg.setStyle("-fx-text-fill: #24bb71");
                 confirmationMsg.setText("Saved Successfully!");
+
             }catch (Exception e){
                 e.printStackTrace();
                 confirmationMsg.setText(e.getMessage());
