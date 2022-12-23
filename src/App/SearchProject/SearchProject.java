@@ -1,10 +1,10 @@
 package App.SearchProject;
 
-import App.Connect;
-import App.IntroPageAdmin.IntroPageAdmin;
-import App.IntroPageEmployee.IntroPageEmployee;
-import App.ProjectSummary.ProjectSummaryController;
-import App.ProjectDetail.ProjectDetailController;
+import App.IntroPageAdmin;
+import App.IntroPageEmployee;
+import App.dao.*;
+import App.presentation.controllers.ProjectSummaryController;
+import App.presentation.controllers.ProjectDetailController;
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXDatePicker;
@@ -29,7 +29,6 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.ResourceBundle;
 import java.util.regex.Pattern;
 
@@ -178,8 +177,8 @@ public class SearchProject implements Initializable {
 
         if (event.getSource() == searchprojectid) {
 
-            Connect connect = new Connect();
-            Connection connection = connect.getConnection();
+            SingletonConnexionDB singletonConnexionDB = new SingletonConnexionDB();
+            Connection connection = singletonConnexionDB.getConnection();
 
             String sql;
 
@@ -312,8 +311,8 @@ public class SearchProject implements Initializable {
     }
 
     public void getEmployeeList() {
-        Connect connect = new Connect();
-        Connection connection = connect.getConnection();
+        SingletonConnexionDB singletonConnexionDB = new SingletonConnexionDB();
+        Connection connection = singletonConnexionDB.getConnection();
 
         ObservableList<String> employeeList = FXCollections.observableArrayList();
 
@@ -337,8 +336,8 @@ public class SearchProject implements Initializable {
     }
 
     public void getClientList() {
-        Connect connect = new Connect();
-        Connection connection = connect.getConnection();
+        SingletonConnexionDB singletonConnexionDB = new SingletonConnexionDB();
+        Connection connection = singletonConnexionDB.getConnection();
 
         ObservableList<String> clientList = FXCollections.observableArrayList();
 
@@ -462,8 +461,8 @@ public class SearchProject implements Initializable {
 
             String[] EmpArrayStr = employeeDropdown.getValue().split("-");
             int employeeId = Integer.parseInt(EmpArrayStr[0].trim());
-            Connect connect = new Connect();
-            Connection connection = connect.getConnection();
+            SingletonConnexionDB singletonConnexionDB = new SingletonConnexionDB();
+            Connection connection = singletonConnexionDB.getConnection();
 
             try {
                 Statement statement = connection.createStatement();
@@ -497,8 +496,8 @@ public class SearchProject implements Initializable {
 //            System.out.println("clientaokk");
             String clientName = clientDropdown.getValue().trim();
             //System.out.println(employeeId);
-            Connect connect = new Connect();
-            Connection connection = connect.getConnection();
+            SingletonConnexionDB singletonConnexionDB = new SingletonConnexionDB();
+            Connection connection = singletonConnexionDB.getConnection();
 
             try {
                 Statement statement = connection.createStatement();
@@ -668,8 +667,8 @@ public class SearchProject implements Initializable {
         String getStartDate = startDate.getValue().toString();
         String getEndDate = endDate.getValue().toString();
 
-        Connect connect = new Connect();
-        Connection connection = connect.getConnection();
+        SingletonConnexionDB singletonConnexionDB = new SingletonConnexionDB();
+        Connection connection = singletonConnexionDB.getConnection();
 
         try {
             Statement statement = connection.createStatement();

@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1a2c566c-90a0-4cd9-a64f-603d6aebca72" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javafx-browser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-browser.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/Connect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/IntroPageAdmin/IntroPageAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/IntroPageAdmin/IntroPageAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/IntroPageAdmin/intropageadmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/IntroPageAdmin/intropageadmin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/Login/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/Login/login.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/Login/loginpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/Login/loginpage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/AddEmployee/AddEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/AddEmployee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/AddEmployee/AddEmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/AddEmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/AddTask/AddtaskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/AddtaskController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/AddTask/addtask.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/addtask.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/AdminProfile/AdminProfile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/AdminProfile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/AdminProfile/AdminProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/AdminProfile/AdminProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/AllEmployee/AllEmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/AllEmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/AllEmployee/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/dao/entities/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/AllEmployee/allemployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/allemployee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Client/AddClient/AddClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/AddClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Client/AddClient/addclient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/addclient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Client/AllClient/AllClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/AllClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Client/AllClient/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/dao/entities/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Client/AllClient/allclient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/allclient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/dao/SingletonConnexionDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/EmployeeProfile/EmployeeProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/EmployeeProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/EmployeeProfile/employeeprofile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/employeeprofile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/IntroPageAdmin/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/IntroPageAdmin/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/IntroPageAdmin/IntroPageAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/IntroPageAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/IntroPageAdmin/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/dao/entities/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/IntroPageAdmin/intropageadmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/intropageadmin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/IntroPageEmployee/IntroPageEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/IntroPageEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/IntroPageEmployee/intropageemployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/intropageemployee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Login/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Login/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Login/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/images/login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Login/loginpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/loginpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/ProjectDetail/ProjectDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/ProjectDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/ProjectDetail/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/dao/entities/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/ProjectDetail/projectdetail.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/projectdetail.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/ProjectSummary/ProjectSummaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/ProjectSummaryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/ProjectSummary/projectsummary.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/css/projectsummary.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/ProjectSummary/projectsummary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/projectsummary.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/SearchProject/SearchProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/SearchProject/SearchProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/SearchProject/searchproject.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/SearchProject/searchproject.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/chart/GanttChart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/chart/GanttChart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/icons/admin-user.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/icons/admin-user.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/icons/employee-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/icons/employee-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/icons/home-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/icons/home-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/icons/log-out.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/icons/log-out.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/icons/user-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/icons/user-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Scene.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +67,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -73,18 +118,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/aitay/Desktop/javafx-browser/mysql-connector-java-8.0.11.jar&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/aitay/Desktop/javafx-browser/mysql-connector-java-8.0.11.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/App/presentation/views/components/css" />
+      <recent name="$PROJECT_DIR$/src/App/presentation" />
+      <recent name="$PROJECT_DIR$/src/App/presentation/views/components/images" />
+      <recent name="$PROJECT_DIR$/src/presentation/views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App.Main" />
+      <module name="javafx-browser" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,6 +174,7 @@
       <updated>1671796440712</updated>
       <workItem from="1671796442526" duration="2466000" />
       <workItem from="1671802094504" duration="5722000" />
+      <workItem from="1671808584868" duration="6072000" />
     </task>
     <servers />
   </component>
