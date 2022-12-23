@@ -1,25 +1,13 @@
 .Btn {
-    /*-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #e88a26, #e88a26);*/
-    /*-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #4a3f99, #42649d);*/
-    /*-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #bf395c, #d6488d);*/
-    /*-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #393839, #393839);*/
-    /*-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #80bf4f, #69d6b1);*/
-    -fx-background-color: #34274e;
+    -fx-background-color: #7A8D9B;
 }
 
 .logout-Btn {
-    /*-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #e88a26, #e88a26);*/
-    /*-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #4a3f99, #42649d);*/
-    /*-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #bf395c, #d6488d);*/
-    /*-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #393839, #393839);*/
-    /*-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #80bf4f, #69d6b1);*/
-    -fx-background-color: #ea8d84;
+    -fx-background-color: #E3D4D0;
 }
 
 .main-bg {
-    /*-fx-background-color: linear-gradient(from 50% 25% to 100% 100%, #66bea6, #3081be);*/
-    -fx-background-color: linear-gradient(from 50% 25% to 100% 100%, #66bea6, #0b9acb);
-    /*-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #5634aa, #ae255f);*/
+    -fx-background-color: linear-gradient(from 50% 25% to 100% 100%, #EED0C6, #DABEB6);
 }
 
 .table-view *.scroll-bar:horizontal *.increment-button,
@@ -56,7 +44,7 @@
 }
 
 .table-row-cell:selected {
-    -fx-background-color: #189782;
+    -fx-background-color: #F9BDBD;
     -fx-background-insets: 0;
     -fx-background-radius: 1;
 }

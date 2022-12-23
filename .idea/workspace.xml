@@ -1,28 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a2c566c-90a0-4cd9-a64f-603d6aebca72" name="Changes" comment="" />
+    <list default="true" id="1a2c566c-90a0-4cd9-a64f-603d6aebca72" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javafx-browser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javafx-browser.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Connect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/Connect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/IntroPageAdmin/IntroPageAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/IntroPageAdmin/IntroPageAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/IntroPageAdmin/intropageadmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/IntroPageAdmin/intropageadmin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Login/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/Login/login.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/Login/loginpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/Login/loginpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/main.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="javaUI" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1671804130" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="javaUI" />
+                    <option name="lastUsedInstant" value="1671804122" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2JJVznTgqHlkRT7fS8y9jPUxwvR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/aitay/Desktop/javafx-browser/mysql-connector-java-8.0.11.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,7 +93,38 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1671796440712</updated>
+      <workItem from="1671796442526" duration="2466000" />
+      <workItem from="1671802094504" duration="5722000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/javaUI" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

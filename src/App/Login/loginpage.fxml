@@ -13,21 +13,13 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="447.0" styleClass="AnchorPlaneBg" stylesheets="@login.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Login.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="447.0" styleClass="main-bg" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Login.LoginController">
     <children>
-        <JFXButton fx:id="loginbutton" buttonType="RAISED" layoutX="165.0" layoutY="354.0" onAction="#Login" prefHeight="44.0" prefWidth="117.0" stylesheets="@login.css" text="Login" textFill="WHITE">
+        <JFXButton fx:id="loginbutton" buttonType="RAISED" styleClass="Btn" layoutX="165.0" layoutY="354.0" onAction="#Login" prefHeight="44.0" prefWidth="117.0" stylesheets="@login.css" text="Login" textFill="WHITE">
          <font>
             <Font name="Gill Sans MT" size="16.0" />
          </font>
-         <ripplerFill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop color="#dfeece" />
-                  <Stop color="#dfeece" offset="0.0074487895716946" />
-                  <Stop color="#7aab6d" offset="1.0" />
-               </stops>
-            </LinearGradient>
-         </ripplerFill>
+
          <styleClass>
             <String fx:value="loginBtn" />
             <String fx:value="login-Btn" />

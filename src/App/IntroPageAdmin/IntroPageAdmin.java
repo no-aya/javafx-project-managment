@@ -115,7 +115,7 @@ public class IntroPageAdmin implements Initializable {
             e.printStackTrace();
         }
 
-        projectCountLabel.setText("Currently you have " + String.valueOf(projectCount) + " projects");
+        projectCountLabel.setText("Vous avez " + String.valueOf(projectCount) + " tâches");
     }
     
     public void getAdminName(int id){
@@ -130,7 +130,7 @@ public class IntroPageAdmin implements Initializable {
             while (rs.next()) {
                 adminName = rs.getString("name");
             }
-            nameUser.setText("Welcome  " + adminName + " !");
+            nameUser.setText("Bienvenue " + adminName + " !");
 
             statement.close();
             connection.close();
