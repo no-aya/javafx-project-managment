@@ -125,7 +125,7 @@ public class AddEmployeeController implements Initializable {
         String username = getEmployee_username().getText();
 
         if(employeeName.trim().isEmpty() || department.trim().isEmpty() || password.trim().isEmpty() || username.trim().isEmpty()){
-            errorMsg.setText("Please fillup the form correctly.");
+            errorMsg.setText("Veillez remplir tous les champs correctement!");
             return;
         }
 
@@ -157,8 +157,8 @@ public class AddEmployeeController implements Initializable {
             psa.executeUpdate();
 
             psa.close();
-
-            Alertbox.display("Confirmation","Employee named "+getEmployee_name().getText()+" has been added.");
+            String message = (boxEmpGender.getValue()=="Masculin"?"M. "+getEmployee_name().getText():"Mme. ")+getEmployee_name().getText()+" a été ajouté avec succès.";
+            Alertbox.display("Confirmation",message);
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -176,6 +176,6 @@ public class AddEmployeeController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        boxEmpGender.getItems().addAll("Male","Female");
+        boxEmpGender.getItems().addAll("Masculin","Féminin");
     }
 }

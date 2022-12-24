@@ -13,62 +13,72 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="447.0" styleClass="main-bg" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.presentation.controllers.LoginController">
+<AnchorPane id="AnchorPane" prefHeight="477.0" prefWidth="447.0" styleClass="main-bg" stylesheets="@components/css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.presentation.controllers.LoginController">
     <children>
-        <JFXButton fx:id="loginbutton" buttonType="RAISED" styleClass="Btn" layoutX="165.0" layoutY="354.0" onAction="#Login" prefHeight="44.0" prefWidth="117.0" stylesheets="@login.css" text="Login" textFill="WHITE">
+        <JFXButton fx:id="loginbutton" buttonType="RAISED" layoutX="155.0" layoutY="354.0" onAction="#Login" prefHeight="44.0" prefWidth="144.0" stylesheets="@components/css/main.css" text="Se connecter" textFill="WHITE">
          <font>
             <Font name="Gill Sans MT" size="16.0" />
          </font>
-
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#dfeece" />
+                  <Stop color="#dfeece" offset="0.0074487895716946" />
+                  <Stop color="#7a8d9b" offset="0.8487972508591065" />
+                  <Stop color="#7a8d9b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
          <styleClass>
-            <String fx:value="loginBtn" />
-            <String fx:value="login-Btn" />
+            <String fx:value="Btn" />
+            <String fx:value="Btn" />
          </styleClass></JFXButton>
-        <JFXPasswordField fx:id="password" layoutX="126.0" layoutY="222.0" prefHeight="34.0" prefWidth="196.0" promptText="Password" styleClass="text-color" stylesheets="@login.css" unFocusColor="WHITE">
+        <JFXPasswordField fx:id="password" layoutX="126.0" layoutY="222.0" prefHeight="34.0" prefWidth="196.0" promptText="Mot de passe" style="-fx-text-fill: #7A8D9B;" styleClass="text-color" stylesheets="@components/css/main.css" unFocusColor="#7a8d9b">
             <font>
                 <Font name="Gill Sans MT" size="16.0" />
             </font>
          <focusColor>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
-                  <Stop color="#012518" />
-                  <Stop color="#15959e" offset="1.0" />
+                  <Stop color="WHITE" />
+                  <Stop color="#7a8d9b" offset="1.0" />
                </stops>
             </LinearGradient>
          </focusColor>
         </JFXPasswordField>
-        <JFXTextField fx:id="username" layoutX="126.0" layoutY="162.0" prefHeight="34.0" prefWidth="196.0" promptText="Username" styleClass="text-color" stylesheets="@login.css" unFocusColor="WHITE">
+        <JFXTextField fx:id="username" layoutX="126.0" layoutY="162.0" prefHeight="34.0" prefWidth="196.0" promptText="Nom d'utilisateur" style="-fx-text-fill: #7A8D9B;" styleClass="text-color" stylesheets="@components/css/main.css" unFocusColor="#7a8d9b">
             <font>
                 <Font name="Gill Sans MT" size="16.0" />
             </font>
          <focusColor>
             <LinearGradient endX="1.0" endY="1.0">
                <stops>
-                  <Stop color="#012518" />
-                  <Stop color="#15959e" offset="1.0" />
+                  <Stop color="WHITE" />
+                  <Stop color="WHITE" offset="0.007662835249042145" />
+                  <Stop color="#7a8d9b" offset="1.0" />
                </stops>
             </LinearGradient>
          </focusColor>
         </JFXTextField>
-        <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="190.0" layoutY="33.0">
-            <image>
-                <Image url="@login.png" />
-            </image>
-        </ImageView>
-      <Label fx:id="isConnected" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="419.0" prefHeight="44.0" prefWidth="398.0" style="-fx-font-weight: bold;" textAlignment="CENTER" textFill="#65080d">
+      <Label fx:id="isConnected" alignment="CENTER" contentDisplay="CENTER" layoutX="28.0" layoutY="419.0" prefHeight="44.0" prefWidth="398.0" style="-fx-font-weight: bold;" textAlignment="CENTER" textFill="#d6162d">
          <font>
             <Font name="Lato Regular" size="14.0" />
          </font>
       </Label>
-      <JFXRadioButton fx:id="adminToggle" layoutX="126.0" layoutY="301.0" onAction="#adminToggleOnAction" styleClass="radio-Btn" stylesheets="@login.css" text="Admin" textFill="WHITE">
+      <JFXRadioButton fx:id="adminToggle" layoutX="116.0" layoutY="298.0" onAction="#adminToggleOnAction" style="-fx-text-fill: #7A8D9B;" styleClass="radio-Btn" stylesheets="@components/css/main.css" text="Responsable" textFill="WHITE">
          <font>
             <Font name="Gill Sans MT" size="15.0" />
          </font>
       </JFXRadioButton>
-      <JFXRadioButton fx:id="employeeToggle" layoutX="238.0" layoutY="301.0" onAction="#employeeToggleOnAction" styleClass="radio-Btn" stylesheets="@login.css" text="Employee" textFill="WHITE">
+      <JFXRadioButton fx:id="employeeToggle" layoutX="252.0" layoutY="298.0" onAction="#employeeToggleOnAction" style="-fx-text-fill: #7A8D9B;" styleClass="radio-Btn" stylesheets="@components/css/main.css" text="Employé" textFill="WHITE">
          <font>
             <Font name="Gill Sans MT" size="15.0" />
          </font>
       </JFXRadioButton>
+        <ImageView fitHeight="241.0" fitWidth="268.0" layoutX="93.0" layoutY="78.0" preserveRatio="true">
+            <image>
+                <Image url="@components/images/login.png" />
+            </image>
+        </ImageView>
     </children>
 </AnchorPane>
