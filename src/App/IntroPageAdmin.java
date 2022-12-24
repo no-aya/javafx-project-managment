@@ -9,7 +9,6 @@ import App.dao.entities.Employee;
 import App.dao.entities.Client;
 import App.presentation.controllers.ProjectDetailController;
 import App.presentation.controllers.ProjectSummaryController;
-import App.SearchProject.SearchProject;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -320,28 +319,6 @@ public class IntroPageAdmin implements Initializable {
         }
     }
 
-    public void searchProjectBtnAction(ActionEvent event) {
-        if(event.getSource() == searchProjectBtn) {
-            FXMLLoader Loader = new FXMLLoader();
-
-            Loader.setLocation(getClass().getResource("presentation/views/searchproject.fxml"));
-
-            try {
-                Loader.load();
-            } catch (Exception e){
-                e.printStackTrace();
-            }
-
-            SearchProject searchProject = Loader.getController();
-            searchProject.setUserRole(getUserRole());
-            searchProject.setAdminId(getAdminId());
-            Parent p = Loader.getRoot();
-            stage = (Stage) searchProjectBtn.getScene().getWindow();
-            Scene scene = new Scene(p);
-            stage.setScene(scene);
-            stage.show();
-        }
-    }
 
     public void allEmployeeBtnAction(ActionEvent event) {
         if(event.getSource() == allEmployeeBtn){

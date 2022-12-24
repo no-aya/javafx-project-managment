@@ -11,7 +11,6 @@ import java.util.ResourceBundle;
 import App.IntroPageAdmin;
 import App.IntroPageEmployee;
 import App.dao.entities.Task;
-import App.SearchProject.SearchProject;
 import App.chart.DateAxis;
 import App.chart.GanttChartController;
 import App.chart.GanttChartController.ExtraData;
@@ -525,36 +524,6 @@ public class ProjectDetailController implements Initializable {
 
             Parent p = Loader.getRoot();
             stage = (Stage) allproject.getScene().getWindow();
-            Scene scene = new Scene(p);
-            stage.setScene(scene);
-            stage.show();
-        }
-    }
-
-    public void SearchProjectAction(ActionEvent event) {
-        if(event.getSource() == searchproject) {
-            FXMLLoader Loader = new FXMLLoader();
-
-            Loader.setLocation(getClass().getResource("../SearchProject/searchproject.fxml"));
-
-            try {
-                Loader.load();
-            } catch (Exception e){
-                e.printStackTrace();
-            }
-
-            SearchProject searchProject = Loader.getController();
-            searchProject.setUserRole(getUserRole());
-            searchProject.initializeSearchPage(getUserRole());
-
-            if(getUserRole().matches("ADMIN_AUTH")){
-                searchProject.setAdminId(getAdminId());
-            } else {
-                searchProject.setEmployeeId(getEmployeeId());
-            }
-
-            Parent p = Loader.getRoot();
-            stage = (Stage) searchproject.getScene().getWindow();
             Scene scene = new Scene(p);
             stage.setScene(scene);
             stage.show();
