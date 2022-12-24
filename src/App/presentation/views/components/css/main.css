@@ -54,6 +54,6 @@
     -fx-text-fill: #7A8D9B;
     -jfx-highlight-text-fill: #7A8D9B;
 }
-.task_calendar{
-    -fx-background-color: #7A8D9B;
+.btn-green{
+    -fx-background-color: #08b474;
 }

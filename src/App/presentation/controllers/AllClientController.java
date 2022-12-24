@@ -13,8 +13,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -89,7 +87,7 @@ public class AllClientController implements Initializable {
             e.printStackTrace();
         }
 
-        clientCountLabel.setText("Currently you have " + String.valueOf(clientCount) + " clients.");
+        clientCountLabel.setText("Total des clients : " + String.valueOf(clientCount) );
     }
 
     @Override
@@ -103,13 +101,6 @@ public class AllClientController implements Initializable {
 
         getClientTableData();
 
-        Image imageDecline = new Image(getClass().getResourceAsStream("../views/components/icons/home-icon.png"));
-        ImageView cameraIconView = new ImageView(imageDecline);
-        cameraIconView.setFitHeight(25);
-        cameraIconView.setFitWidth(25);
-        homeBackBtn.setGraphic(cameraIconView);
-
-        viewAllClient.setStyle("-fx-background-color: #5d2664");
     }
 
     public void homeBackBtnAction(ActionEvent event) {
