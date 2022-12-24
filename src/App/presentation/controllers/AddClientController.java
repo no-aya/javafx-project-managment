@@ -149,7 +149,7 @@ public class AddClientController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         int id = 0;
 
-        AddClientBtn.setStyle("-fx-background-color: rgba(12,151,156,0.7)");
+
 
         try {
             SingletonConnexionDB singletonConnexionDB = new SingletonConnexionDB();
