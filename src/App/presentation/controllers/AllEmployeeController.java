@@ -13,8 +13,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.net.URL;
@@ -90,7 +88,7 @@ public class AllEmployeeController implements  Initializable{
             e.printStackTrace();
         }
 
-        employeeCountLabel.setText("Currently you have " + String.valueOf(employeeCount) + " employees.");
+        employeeCountLabel.setText("Total des employés : " + String.valueOf(employeeCount));
     }
 
     @Override
@@ -104,12 +102,6 @@ public class AllEmployeeController implements  Initializable{
         employeeTableView.setEditable(true);
 
         getEmployeeTableData();
-
-        Image imageDecline = new Image(getClass().getResourceAsStream("../views/components/icons/home-icon.png"));
-        ImageView cameraIconView = new ImageView(imageDecline);
-        cameraIconView.setFitHeight(25);
-        cameraIconView.setFitWidth(25);
-        homeBackBtn.setGraphic(cameraIconView);
     }
 
     public void homeBackBtnAction(ActionEvent event) {

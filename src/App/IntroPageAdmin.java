@@ -143,7 +143,6 @@ public class IntroPageAdmin implements Initializable {
     }
 
     private void getEmployeeTableData(){
-        //Clear the all column data from table
         employeeTableView.getItems().clear();
         employeeCount = 0;
 
@@ -177,7 +176,6 @@ public class IntroPageAdmin implements Initializable {
     }
 
     private void getClientTableData(){
-        //Clear the all column data from table
         clientTableView.getItems().clear();
         clientCount = 0;
 
