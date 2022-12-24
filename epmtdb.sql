@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.2
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Nov 16, 2022 at 11:09 PM
--- Server version: 5.7.24
--- PHP Version: 8.0.1
+-- Hôte : localhost:8889
+-- Généré le : sam. 24 déc. 2022 à 17:49
+-- Version du serveur :  5.7.34
+-- Version de PHP : 7.4.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,48 +18,44 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `epmtdb`
+-- Base de données : `epmtdb`
 --
-CREATE DATABASE IF NOT EXISTS `epmtdb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `epmtdb`;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin`
+-- Structure de la table `admin`
 --
 
 CREATE TABLE `admin` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `id` int(255) NOT NULL,
   `name` varchar(500) NOT NULL,
   `designation` varchar(500) NOT NULL,
   `email` varchar(500) NOT NULL,
-  `contact` varchar(500) NOT NULL,
-  PRIMARY KEY (`id`)
+  `contact` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `admin`
+-- Déchargement des données de la table `admin`
 --
 
 INSERT INTO `admin` (`id`, `name`, `designation`, `email`, `contact`) VALUES
-(1, 'Admin', 'CEO', 'admin@gmail.com', '0128182123232');
+(1, 'Admin', 'CEO', 'admin@gmail.com', '0111111111');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `admin_auth`
+-- Structure de la table `admin_auth`
 --
 
 CREATE TABLE `admin_auth` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `id` int(255) NOT NULL,
   `username` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `admin_auth`
+-- Déchargement des données de la table `admin_auth`
 --
 
 INSERT INTO `admin_auth` (`id`, `username`, `password`) VALUES
@@ -68,79 +64,74 @@ INSERT INTO `admin_auth` (`id`, `username`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `client`
+-- Structure de la table `client`
 --
 
 CREATE TABLE `client` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `id` int(255) NOT NULL,
   `name` varchar(500) NOT NULL,
-  `contact_person` varchar(500) NOT NULL,
+  `contact_person` varchar(255) NOT NULL,
   `phone` varchar(500) NOT NULL,
-  `address` varchar(500) NOT NULL,
-  PRIMARY KEY (`id`)
+  `address` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `client`
+-- Déchargement des données de la table `client`
 --
 
 INSERT INTO `client` (`id`, `name`, `contact_person`, `phone`, `address`) VALUES
-(1, 'client 1', 'adam', '6543323288989', '22 bekar street'),
-(2, 'Client Mango', 'Barley', '01828323232223', '23 bekar street'),
-(3, 'Client Orange', 'Hulk', '012893822323', '24 bekar street');
+(1, 'Client CDG', '', '0655733357', 'Casa'),
+(2, 'Client Total', '', '0642883773', 'Rabat'),
+(3, 'Client Orange', '', '0655667788', 'Rabat');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `employee`
+-- Structure de la table `employee`
 --
 
 CREATE TABLE `employee` (
-  `id` int(50) NOT NULL AUTO_INCREMENT,
+  `id` int(50) NOT NULL,
   `name` varchar(500) NOT NULL,
   `designation` varchar(500) NOT NULL,
   `department` varchar(500) NOT NULL,
   `contact` varchar(500) NOT NULL,
   `email` varchar(500) NOT NULL,
-  `gender` varchar(100) NOT NULL,
-  PRIMARY KEY (`id`)
+  `gender` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `employee`
+-- Déchargement des données de la table `employee`
 --
 
 INSERT INTO `employee` (`id`, `name`, `designation`, `department`, `contact`, `email`, `gender`) VALUES
-(1, 'Ayon', 'Software Engineer', 'IT', '0197812732322', 'ayon@gmail.com', 'Male'),
-(2, 'Mahadi', 'QA', 'IT', '901288182832', 'mahadi@gmail.com', 'Male'),
-(3, 'Arnab', 'Graphics Designer', 'Graphics', '0127828323234', 'arnab@gmail.com', 'Male');
+(1, 'Asmae', 'Software Engineer', 'IT', '066666666', 'asmae@gmail.com', 'Female'),
+(2, 'Aya', 'Graphics Designer', 'IT', '077777777', 'aya@gmail.com', 'Female');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `employee_auth`
+-- Structure de la table `employee_auth`
 --
 
 CREATE TABLE `employee_auth` (
-  `id` int(255) NOT NULL AUTO_INCREMENT,
+  `id` int(255) NOT NULL,
   `username` varchar(255) NOT NULL,
-  `password` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `employee_auth`
+-- Déchargement des données de la table `employee_auth`
 --
 
 INSERT INTO `employee_auth` (`id`, `username`, `password`) VALUES
-(1, 'Ayon', 'ayon'),
-(2, 'Mahadi', 'mahadi'),
-(3, 'Arnab', 'arnab');
+(1, 'Asmae', 'asmae'),
+(2, 'Aya', 'Aya');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `project_info`
+-- Structure de la table `project_info`
 --
 
 CREATE TABLE `project_info` (
@@ -153,7 +144,7 @@ CREATE TABLE `project_info` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `project_info`
+-- Déchargement des données de la table `project_info`
 --
 
 INSERT INTO `project_info` (`id`, `project_name`, `start_date`, `end_date`, `estimated_time`, `client_id`) VALUES
@@ -162,7 +153,7 @@ INSERT INTO `project_info` (`id`, `project_name`, `start_date`, `end_date`, `est
 -- --------------------------------------------------------
 
 --
--- Table structure for table `project_task`
+-- Structure de la table `project_task`
 --
 
 CREATE TABLE `project_task` (
@@ -178,10 +169,83 @@ CREATE TABLE `project_task` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `project_task`
+-- Déchargement des données de la table `project_task`
 --
 
 INSERT INTO `project_task` (`id`, `task_name`, `task_time`, `task_start_date`, `task_end_date`, `progress`, `color`, `dependency`, `assigned`) VALUES
 (1, 'Design UI', '4 Days', '2022-11-17', '2022-11-20', '0%', '0x673ab7ff', '', 3),
 (1, 'Develop UI', '4 Days', '2022-11-21', '2022-11-24', '0%', '0x009688ff', 'Design UI', 1),
 (1, 'Test the UI', '4 Days', '2022-11-26', '2022-11-29', '0%', '0x26c6daff', 'Develop UI', 2);
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `admin_auth`
+--
+ALTER TABLE `admin_auth`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `client`
+--
+ALTER TABLE `client`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `employee`
+--
+ALTER TABLE `employee`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `employee_auth`
+--
+ALTER TABLE `employee_auth`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT pour la table `admin_auth`
+--
+ALTER TABLE `admin_auth`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT pour la table `client`
+--
+ALTER TABLE `client`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT pour la table `employee`
+--
+ALTER TABLE `employee`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT pour la table `employee_auth`
+--
+ALTER TABLE `employee_auth`
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
