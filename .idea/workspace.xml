@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="09d6005c-1862-4331-a04b-874db6fc47d7" name="Changes" comment="">
+    <list default="true" id="09d6005c-1862-4331-a04b-874db6fc47d7" name="Changes" comment="[Add] Log in &amp; Page Admin interface">
+      <change afterPath="$PROJECT_DIR$/.idea/cssdialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/dao/SingletonConnexionDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/dao/SingletonConnexionDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/components/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/components/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/components/icons/log-out.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/icons/log-out.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/components/images/login.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/images/login.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/intropageadmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/intropageadmin.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/loginpage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/loginpage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/IntroPageEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/IntroPageEmployee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/intropageemployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/intropageemployee.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +32,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false"
   }
 }]]></component>
@@ -51,8 +48,16 @@
       <option name="presentableId" value="Default" />
       <updated>1671814945253</updated>
       <workItem from="1671814951648" duration="321000" />
-      <workItem from="1671880930328" duration="3820000" />
+      <workItem from="1671880930328" duration="4800000" />
     </task>
+    <task id="LOCAL-00001" summary="[Add] Log in &amp; Page Admin interface">
+      <created>1671886416716</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671886416716</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +73,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[Add] Log in &amp; Page Admin interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] Log in &amp; Page Admin interface" />
   </component>
 </project>
