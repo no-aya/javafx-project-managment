@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09d6005c-1862-4331-a04b-874db6fc47d7" name="Changes" comment="[Add] Log in &amp; Page Admin interface">
+      <change afterPath="$PROJECT_DIR$/src/App/presentation/views/components/css/add.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/IntroPageAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/IntroPageAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/controllers/ProjectDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/ProjectDetailController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/presentation/controllers/ProjectSummaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/ProjectSummaryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/presentation/views/components/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/projectdetail.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/projectdetail.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/components/icons/home-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/projectsummary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/projectsummary.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +22,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -72,16 +73,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="App" />
