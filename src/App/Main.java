@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("presentation/views/loginpage.fxml"));
-        primaryStage.setTitle("Easy Project Management tool");
+        primaryStage.setTitle("Java Projet : Plannification des projets");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }

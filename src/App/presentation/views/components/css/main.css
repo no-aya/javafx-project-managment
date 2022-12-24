@@ -27,14 +27,10 @@
     -fx-shape: null;
 }
 
-/*.table-view .column-header {*/
-    /*-fx-background-color: linear-gradient(#131313 0.0%, #424141 100.0%);*/
-/*}*/
 
 .table-view .table-cell {
     -fx-font-size: 14px;
     -fx-font-family: "Gill Sans MT" !important;
-    /* -fx-text-fill:orange; */
 
 }
 
@@ -47,4 +43,14 @@
     -fx-background-color: #F9BDBD;
     -fx-background-insets: 0;
     -fx-background-radius: 1;
+}
+
+.radio-Btn{
+    -jfx-selected-color: #7A8D9B;
+    -jfx-unselected-color: #7A8D9B;
+    -jfx-focus-color: #7A8D9B;
+}
+.text-color{
+    -fx-text-fill: #7A8D9B;
+    -jfx-highlight-text-fill: #7A8D9B;
 }
