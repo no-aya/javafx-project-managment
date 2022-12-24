@@ -1,6 +1,6 @@
 package App;
 
-import App.dao.*;
+import App.dao.SingletonConnexionDB;
 import App.presentation.controllers.ProjectSummaryController;
 import App.SearchProject.SearchProject;
 import com.jfoenix.controls.JFXButton;

@@ -1,6 +1,8 @@
 package App;
 
-import App.dao.*;
+
+import App.dao.SingletonConnexionDB;
+
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXTextField;
@@ -34,7 +36,6 @@ public class EmployeeProfile implements Initializable {
     public JFXButton homeBackBtn;
     public JFXButton editProfileBtn;
     public JFXButton saveBtn;
-    public JFXTextField empIdText;
     public JFXTextField empNameText;
     public JFXTextField empUsernameText;
     public JFXTextField empPassText;
@@ -50,7 +51,9 @@ public class EmployeeProfile implements Initializable {
         Statement statement = connection.createStatement();
 
         String sql = "SELECT * FROM EMPLOYEE WHERE id="+ empId;
+
         String sql2 = "SELECT * FROM EMPLOYEE_AUTH WHERE id="+ empId;
+        //System.out.println(sql2);
 
         ResultSet rs = statement.executeQuery(sql);
 
@@ -62,7 +65,6 @@ public class EmployeeProfile implements Initializable {
             String contact = rs.getString("contact");
 
             empNameText.setText(name);
-            empIdText.setText(String.valueOf(id));
             empDesText.setText(desig);
             empEmailText.setText(email);
             empContactText.setText(contact);
@@ -139,7 +141,7 @@ public class EmployeeProfile implements Initializable {
             String empContact = empContactText.getText();
 
             if(empName.trim().isEmpty() || empPass.trim().isEmpty() || empDes.trim().isEmpty()){
-                confirmationMsg.setText("Please fill up the form correctly.");
+                confirmationMsg.setText("Veuillez remplir le formulaire correctement.");
                 return;
             }
 
@@ -175,7 +177,7 @@ public class EmployeeProfile implements Initializable {
                 empContactText.setEditable(false);
 
                 confirmationMsg.setStyle("-fx-text-fill: #24bb71");
-                confirmationMsg.setText("Saved Successfully!");
+                confirmationMsg.setText("Enregistré avec succès !");
 
             }catch (Exception e){
                 e.printStackTrace();
