@@ -1,4 +1,4 @@
-package App.AdminProfile;
+package App;
 
 
 import App.dao.*;
@@ -141,7 +141,7 @@ public class AdminProfile implements Initializable {
             String adminContact = adminContactText.getText();
 
             if(adminName.trim().isEmpty() || adminPass.trim().isEmpty() || adminDes.trim().isEmpty()){
-                confirmationMsg.setText("Please fill up the form correctly.");
+                confirmationMsg.setText("Veuillez remplir le formulaire correctement.");
                 return;
             }
 
@@ -176,7 +176,7 @@ public class AdminProfile implements Initializable {
                 adminEmailText.setEditable(false);
                 adminContactText.setEditable(false);
                 confirmationMsg.setStyle("-fx-text-fill: #24bb71");
-                confirmationMsg.setText("Saved Successfully!");
+                confirmationMsg.setText("Enregistré avec succès !");
             }catch (Exception e){
                 e.printStackTrace();
                 confirmationMsg.setText(e.getMessage());

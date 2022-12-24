@@ -1,6 +1,5 @@
 package App;
 
-import App.AdminProfile.AdminProfile;
 import App.dao.entities.Project;
 import App.presentation.controllers.AllEmployeeController;
 import App.presentation.controllers.AddClientController;
