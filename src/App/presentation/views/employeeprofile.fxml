@@ -32,7 +32,7 @@
                 <Font name="Gill Sans MT" size="15.0" />
             </font>
         </Label>
-        <Label alignment="BASELINE_LEFT" layoutX="137.0" layoutY="217.0" prefHeight="27.0" prefWidth="105.0" text="RS">
+        <Label alignment="BASELINE_LEFT" layoutX="137.0" layoutY="217.0" prefHeight="27.0" prefWidth="105.0" text="Rôle">
             <font>
                 <Font name="Gill Sans MT" size="15.0" />
             </font>

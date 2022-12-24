@@ -165,8 +165,6 @@ public class AddClientController implements Initializable {
 
             statement.close();
             connection.close();
-
-            //increment id by 1 to set as new id
             id += 1;
             clientIdField.setText(String.valueOf(id));
             clientIdField.setEditable(false);
