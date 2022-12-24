@@ -97,16 +97,16 @@ public class AdminProfile implements Initializable {
         if(event.getSource() == homeBackBtn){
             FXMLLoader Loader = new FXMLLoader();
 
-            Loader.setLocation(getClass().getResource("../IntroPageAdmin/IntroPageAdmin.fxml"));
+            Loader.setLocation(getClass().getResource("presentation/views/IntroPageAdmin.fxml"));
 
             try {
                 Loader.load();
             } catch (Exception e) {
                 e.printStackTrace();
             }
-
             IntroPageAdmin introPageAdmin = Loader.getController();
             introPageAdmin.setAdminId(adminId);
+
             introPageAdmin.setUserRole(getUserRole());
             introPageAdmin.getAdminName(adminId);
 
