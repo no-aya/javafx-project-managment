@@ -33,8 +33,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.control.cell.TextFieldTableCell;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
@@ -61,8 +59,8 @@ public class ProjectDetailController implements Initializable {
     Parent root;
 
     //Error messages used when changing the end_date value
-    final private String NO_START_DATE_ERROR = "Start date cannot be empty";
-    final private String INVALID_END_DATE = "End date must be equal or greater than start date";
+    final private String NO_START_DATE_ERROR = "Date de début ne peut être vide!";
+    final private String INVALID_END_DATE = "Date de fin doit être suppérieure à la date de début!";
 
     private String userRole;
     private int adminId;
@@ -188,7 +186,7 @@ public class ProjectDetailController implements Initializable {
         int projectClientId = Integer.parseInt(ClientArrayStr[0].trim());
 
         if(projectClientId == 0){
-            invalid_date_label.setText("A valid employee must be selected.");
+            invalid_date_label.setText("Sélectionnez un employé.");
             return;
         } else {
             invalid_date_label.setText("");
@@ -231,7 +229,7 @@ public class ProjectDetailController implements Initializable {
 
     @FXML
     public JFXTextField getEsti_time() {
-        esti_time.setText(" "+ calcDays(start_date,end_date) + " Days");
+        esti_time.setText(" "+ calcDays(start_date,end_date) + " jours");
         return esti_time;
     }
 
@@ -424,12 +422,6 @@ public class ProjectDetailController implements Initializable {
         tableview.setEditable(true);
         TaskProgress.setCellFactory(TextFieldTableCell.forTableColumn());
 
-        Image imageDecline = new Image(getClass().getResourceAsStream("../views/components/icons/home-icon.png"));
-        ImageView cameraIconView = new ImageView(imageDecline);
-        cameraIconView.setFitHeight(25);
-        cameraIconView.setFitWidth(25);
-        homeBackBtn.setGraphic(cameraIconView);
-
         ClientNameText.setDisable(true);
 
         int id = 0;
@@ -481,11 +473,9 @@ public class ProjectDetailController implements Initializable {
 
             FXMLLoader Loader = new FXMLLoader();
 
-            //load up OTHER FXML document
 
             stage = (Stage) allproject.getScene().getWindow();
-            //load up OTHER FXML document
-            Loader.setLocation(getClass().getResource("../ProjectSummary/projectsummary.fxml"));
+            Loader.setLocation(getClass().getResource("../views/projectSummary.fxml"));
 
             try{
                 Loader.load();
@@ -515,7 +505,7 @@ public class ProjectDetailController implements Initializable {
         if(event.getSource() == btnProjectDetail) {
             FXMLLoader Loader = new FXMLLoader();
 
-            Loader.setLocation(getClass().getResource("../ProjectDetail/projectdetail.fxml"));
+            Loader.setLocation(getClass().getResource("../views/projectdetail.fxml"));
 
             try {
                 Loader.load();
@@ -681,7 +671,7 @@ public class ProjectDetailController implements Initializable {
         if(event.getSource() == homeBackBtn) {
             FXMLLoader Loader = new FXMLLoader();
             if (getUserRole().matches("ADMIN_AUTH")) {
-                Loader.setLocation(getClass().getResource("../IntroPageAdmin/intropageadmin.fxml"));
+                Loader.setLocation(getClass().getResource("../views/intropageadmin.fxml"));
 
                 try {
                     Loader.load();
@@ -702,7 +692,7 @@ public class ProjectDetailController implements Initializable {
             }
 
             else{
-                Loader.setLocation(getClass().getResource("../IntroPageEmployee/intropageemployee.fxml"));
+                Loader.setLocation(getClass().getResource("../views/intropageemployee.fxml"));
 
                 try {
                     Loader.load();

@@ -136,7 +136,7 @@ public class ProjectSummaryController implements Initializable {
         if(event.getSource() == searchproject) {
             FXMLLoader Loader = new FXMLLoader();
 
-            Loader.setLocation(getClass().getResource("../views/searchproject.fxml"));
+            Loader.setLocation(getClass().getResource("../../searchproject/searchproject.fxml"));
 
             try {
                 Loader.load();

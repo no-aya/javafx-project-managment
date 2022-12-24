@@ -117,7 +117,7 @@ public class IntroPageAdmin implements Initializable {
             e.printStackTrace();
         }
 
-        projectCountLabel.setText("Vous avez " + String.valueOf(projectCount) + " tâches");
+        projectCountLabel.setText("Vous avez " + String.valueOf(projectCount) + " projets");
     }
     
     public void getAdminName(int id){
