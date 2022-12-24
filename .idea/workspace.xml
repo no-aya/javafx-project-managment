@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="09d6005c-1862-4331-a04b-874db6fc47d7" name="Changes" comment="[Add] Log in &amp; Page Admin interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/AdminProfile/AdminProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/AdminProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/IntroPageAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/IntroPageAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/AdminProfile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/AdminProfile.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/components/icons/admin-user.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/components/icons/admin-user.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/employeeprofile.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/employeeprofile.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/presentation/controllers/AddClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/AddClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/AddEmployee.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/AddEmployee.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/addclient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/addclient.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +53,7 @@
       <option name="presentableId" value="Default" />
       <updated>1671814945253</updated>
       <workItem from="1671814951648" duration="321000" />
-      <workItem from="1671880930328" duration="9226000" />
+      <workItem from="1671880930328" duration="10553000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] Log in &amp; Page Admin interface">
       <created>1671886416716</created>

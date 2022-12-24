@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="637.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.presentation.controllers.AddEmployeeController">
+<AnchorPane id="AnchorPane" prefHeight="637.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/8.0.331" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.presentation.controllers.AddEmployeeController">
     <children>
         <JFXButton fx:id="AddEmployeeButton" layoutX="264.0" layoutY="525.0" onAction="#AddEmployee" prefHeight="44.0" prefWidth="117.0" ripplerFill="#009688" style="-fx-background-color: #34274e;" text="Add Employee" textFill="WHITE">
          <font>
@@ -42,12 +42,12 @@
       <Label alignment="CENTER" layoutX="183.0" layoutY="289.0" prefHeight="29.0" prefWidth="78.0" style="-fx-font-size: 16;" text="Email:" textAlignment="CENTER" />
       <Label alignment="CENTER" layoutX="179.0" layoutY="330.0" prefHeight="29.0" prefWidth="78.0" style="-fx-font-size: 16;" text="Contact:" textAlignment="CENTER" />
       <Label alignment="CENTER" layoutX="163.0" layoutY="414.0" prefHeight="29.0" prefWidth="104.0" style="-fx-font-size: 16;" text="Department:" textAlignment="CENTER" />
-      <JFXTextField fx:id="employee_email" focusColor="#34274e" layoutX="285.0" layoutY="288.0" prefHeight="30.0" prefWidth="169.0">
+      <JFXTextField fx:id="employee_email" focusColor="#0c979c" layoutX="285.0" layoutY="288.0" prefHeight="30.0" prefWidth="169.0">
          <font>
             <Font size="14.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="employee_contact" focusColor="#34274e" layoutX="285.0" layoutY="329.0" prefHeight="30.0" prefWidth="169.0">
+      <JFXTextField fx:id="employee_contact" focusColor="#0c979c" layoutX="285.0" layoutY="329.0" prefHeight="30.0" prefWidth="169.0">
          <font>
             <Font size="14.0" />
          </font>
