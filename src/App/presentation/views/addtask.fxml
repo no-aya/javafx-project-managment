@@ -14,42 +14,42 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="538.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.presentation.controllers.AddtaskController">
+<AnchorPane id="AnchorPane" prefHeight="449.0" prefWidth="652.0" stylesheets="@components/css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.presentation.controllers.AddtaskController">
     <children>
-        <JFXTextField fx:id="TaskProjectName" editable="false" layoutX="435.0" layoutY="43.0" prefHeight="37.0" prefWidth="172.0" />
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="251.0" layoutY="118.0" prefHeight="62.0" prefWidth="151.0" text="Task Details" textAlignment="CENTER">
+        <JFXTextField fx:id="TaskProjectName" editable="false" layoutX="442.0" layoutY="100.0" prefHeight="37.0" prefWidth="172.0" />
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="75.0" layoutY="73.0" prefHeight="62.0" prefWidth="151.0" text="Détail de la tâche" textAlignment="CENTER">
             <font>
-                <Font size="18.0" />
+                <Font name="System Bold" size="18.0" />
             </font></Label>
-        <Label layoutX="333.0" layoutY="39.0" prefHeight="37.0" prefWidth="105.0" text="Project Name" />
-        <JFXButton fx:id="AddTaskButton" alignment="CENTER" buttonType="RAISED" layoutX="267.0" layoutY="419.0" onAction="#AddTaskDetail" prefHeight="52.0" prefWidth="118.0" styleClass="Btn" stylesheets="@../main.css" text="Add Task" textFill="WHITE">
+        <Label layoutX="348.0" layoutY="100.0" prefHeight="37.0" prefWidth="86.0" text="Nom du projet" />
+        <JFXButton fx:id="AddTaskButton" alignment="CENTER" buttonType="RAISED" layoutX="241.0" layoutY="413.0" onAction="#AddTaskDetail" prefHeight="37.0" prefWidth="171.0" style="-fx-background-color: #F9BDBD;" styleClass="Btn" stylesheets="@components/css/main.css" text="Ajouter la tâche" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
         </JFXButton>
-        <JFXColorPicker fx:id="task_color" editable="true" layoutX="121.0" layoutY="324.0" />
-        <JFXDatePicker fx:id="task_start_date" defaultColor="#2b3ea7" layoutX="121.0" layoutY="264.0" onAction="#onDateChange" />
+        <JFXColorPicker fx:id="task_color" editable="true" layoutX="121.0" layoutY="324.0" prefHeight="25.0" prefWidth="171.0" />
+        <JFXDatePicker fx:id="task_start_date" defaultColor="#f9bdbd" layoutX="121.0" layoutY="264.0" onAction="#onDateChange" stylesheets="@components/css/main.css" />
         <JFXDrawer layoutX="244.0" layoutY="419.0" />
         <JFXToolbar layoutX="67.0" layoutY="463.0" />
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="260.0" prefHeight="37.0" prefWidth="94.0" text="Start Date" textAlignment="CENTER" />
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="344.0" layoutY="260.0" prefHeight="37.0" prefWidth="94.0" text="End Date" textAlignment="CENTER" />
-        <JFXDatePicker fx:id="task_end_date" defaultColor="#2b3ea7" layoutX="448.0" layoutY="264.0" onAction="#onDateChange" />
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="34.0" layoutY="319.0" prefHeight="37.0" prefWidth="66.0" text="Color" textAlignment="CENTER" />
+        <Label contentDisplay="CENTER" layoutX="27.0" layoutY="260.0" prefHeight="37.0" prefWidth="94.0" text="Début" textAlignment="CENTER" />
+        <Label contentDisplay="CENTER" layoutX="344.0" layoutY="260.0" prefHeight="37.0" prefWidth="94.0" text="Fin" textAlignment="CENTER" />
+        <JFXDatePicker fx:id="task_end_date" defaultColor="#f9bdbd" layoutX="457.0" layoutY="266.0" onAction="#onDateChange" prefHeight="25.0" prefWidth="159.0" />
+        <Label contentDisplay="CENTER" layoutX="25.0" layoutY="319.0" prefHeight="37.0" prefWidth="75.0" text="Couleur" textAlignment="CENTER" />
         <JFXNodesList layoutX="344.0" layoutY="337.0" prefHeight="82.0" prefWidth="80.0" />
         <JFXTogglePane layoutX="432.0" layoutY="431.0" />
-        <ChoiceBox fx:id="dependency" layoutX="470.0" layoutY="324.0" prefHeight="27.0" prefWidth="145.0" />
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="354.0" layoutY="319.0" prefHeight="37.0" prefWidth="118.0" text="Task Dependecy" textAlignment="CENTER" />
-        <Separator layoutX="227.0" layoutY="167.0" prefHeight="0.0" prefWidth="199.0" />
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="354.0" layoutY="191.0" prefHeight="37.0" prefWidth="94.0" text="Assigned to" textAlignment="CENTER" />
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="191.0" prefHeight="37.0" prefWidth="94.0" text="Task Name" textAlignment="CENTER" />
-      <JFXTextField fx:id="TaskProjectID" editable="false" layoutX="85.0" layoutY="39.0" prefHeight="37.0" prefWidth="172.0" />
-      <Label alignment="CENTER" layoutX="43.0" layoutY="43.0" prefHeight="29.0" prefWidth="37.0" text="ID" />
-      <JFXTextField fx:id="Task_name" layoutX="121.0" layoutY="196.0" />
+        <ChoiceBox fx:id="dependency" layoutX="456.0" layoutY="324.0" prefHeight="27.0" prefWidth="159.0" />
+        <Label contentDisplay="CENTER" layoutX="342.0" layoutY="318.0" prefHeight="37.0" prefWidth="118.0" text="Dépendance" textAlignment="CENTER" />
+        <Separator layoutX="53.0" layoutY="134.0" prefHeight="0.0" prefWidth="199.0" />
+        <Label contentDisplay="CENTER" layoutX="344.0" layoutY="202.0" prefHeight="37.0" prefWidth="94.0" text="Attribuée à" textAlignment="CENTER" />
+        <Label contentDisplay="CENTER" layoutX="27.0" layoutY="203.0" prefHeight="37.0" prefWidth="94.0" text="Désignation" textAlignment="CENTER" />
+      <JFXTextField fx:id="TaskProjectID" editable="false" layoutX="442.0" layoutY="53.0" prefHeight="37.0" prefWidth="172.0" />
+      <Label alignment="CENTER" layoutX="348.0" layoutY="57.0" prefHeight="29.0" prefWidth="37.0" text="ID" />
+      <JFXTextField fx:id="Task_name" layoutX="121.0" layoutY="208.0" prefHeight="25.0" prefWidth="171.0" />
       <Label fx:id="invalid_date_label" alignment="CENTER" layoutX="130.0" layoutY="480.0" prefHeight="16.0" prefWidth="392.0" textFill="#790000" visible="false">
          <font>
             <Font size="12.0" />
          </font>
       </Label>
-      <ChoiceBox fx:id="employeeAssigned" layoutX="470.0" layoutY="196.0" prefHeight="27.0" prefWidth="145.0" />
+      <ChoiceBox fx:id="employeeAssigned" layoutX="455.0" layoutY="208.0" prefHeight="27.0" prefWidth="159.0" />
     </children>
 </AnchorPane>

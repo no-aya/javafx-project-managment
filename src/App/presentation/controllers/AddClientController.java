@@ -115,7 +115,7 @@ public class AddClientController implements Initializable {
             String address = addressField.getText();
 
             if(clientName.trim().isEmpty() || contactPerson.trim().isEmpty() || phone.trim().isEmpty() || address.trim().isEmpty()){
-                confirmationMsg.setText("Please fillup the form correctly.");
+                confirmationMsg.setText("Veuillez remplir le formulaire correctement.");
                 return;
             }
 
@@ -135,7 +135,7 @@ public class AddClientController implements Initializable {
                 ps.close();
 
                 confirmationMsg.setStyle("-fx-text-fill: #24bb71");
-                confirmationMsg.setText("A client named "+ clientName + " has been added.");
+                confirmationMsg.setText("Le client "+ clientName + " est ajouté avec succès.");
 
             } catch (SQLException e) {
                 e.printStackTrace();
@@ -149,13 +149,7 @@ public class AddClientController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         int id = 0;
 
-        Image imageDecline = new Image(getClass().getResourceAsStream("../views/components/icons/home-icon.png"));
-        ImageView cameraIconView = new ImageView(imageDecline);
-        cameraIconView.setFitHeight(25);
-        cameraIconView.setFitWidth(25);
-        homeBackBtn.setGraphic(cameraIconView);
 
-        AddClientBtn.setStyle("-fx-background-color: #5d2664");
 
         try {
             SingletonConnexionDB singletonConnexionDB = new SingletonConnexionDB();
@@ -171,8 +165,6 @@ public class AddClientController implements Initializable {
 
             statement.close();
             connection.close();
-
-            //increment id by 1 to set as new id
             id += 1;
             clientIdField.setText(String.valueOf(id));
             clientIdField.setEditable(false);

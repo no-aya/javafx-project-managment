@@ -1,1 +1,2 @@
-# javafx-browser
+# Gestion des projets : JavaFX
+

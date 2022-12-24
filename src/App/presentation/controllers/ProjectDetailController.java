@@ -285,7 +285,7 @@ public class ProjectDetailController implements Initializable {
             Parent p = Loader.getRoot();
             Stage stage = new Stage();
             Scene scene = new Scene(p);
-            stage.setTitle("Add New Task");
+            stage.setTitle("Ajouter une tâche");
             stage.setScene(scene);
             stage.showAndWait();
 

@@ -1,6 +1,6 @@
 package App;
 
-import App.dao.*;
+import App.dao.SingletonConnexionDB;
 import App.presentation.controllers.ProjectSummaryController;
 import App.SearchProject.SearchProject;
 import com.jfoenix.controls.JFXButton;
@@ -93,7 +93,7 @@ public class IntroPageEmployee implements Initializable {
             e.printStackTrace();
         }
 
-        projectCountLabel.setText("Currently you have " + String.valueOf(projectCount) + " projects");
+        projectCountLabel.setText("Vous avez " + String.valueOf(projectCount) + " projets en cours");
     }
     
     public void getEmployeeName(int id){
@@ -108,7 +108,7 @@ public class IntroPageEmployee implements Initializable {
             while (rs.next()) {
                 employeeName = rs.getString("name");
             }
-            nameUser.setText("Welcome  " + employeeName + " !");
+            nameUser.setText("Bienvenue  " + employeeName + " !");
 
             statement.close();
             connection.close();
@@ -120,7 +120,7 @@ public class IntroPageEmployee implements Initializable {
 
     
     public void getLogoutIcon(){
-        Image imageDecline = new Image(getClass().getResourceAsStream("../icons/log-out.png"));
+        Image imageDecline = new Image(getClass().getResourceAsStream("presentation/views/components/icons/log-out.png"));
         ImageView cameraIconView = new ImageView(imageDecline);
         cameraIconView.setFitHeight(18);
         cameraIconView.setFitWidth(18);

@@ -57,7 +57,7 @@ public class LoginController implements Initializable {
     private void Login(ActionEvent actionEvent) throws IOException {
 
         if(!employeeToggle.isSelected() && !adminToggle.isSelected()){
-            isConnected.setText("Select Admin or Employee from above");
+            isConnected.setText("Êtes-vous un responsable ou un employé?");
             return;
         }
 
@@ -72,7 +72,6 @@ public class LoginController implements Initializable {
                 ResultSet resultSet = statement.executeQuery(sql);
 
                 if (resultSet.next()) {
-                    //load up OTHER FXML document
                     Loader.setLocation(getClass().getResource("../views/intropageadmin.fxml"));
                     int adminid = resultSet.getInt("id");
                     try{
@@ -93,8 +92,7 @@ public class LoginController implements Initializable {
                     stage.centerOnScreen();
                     stage.show();
                 } else {
-                    // If username & password doesn't match
-                    isConnected.setText("Username / password is wrong!");
+                    isConnected.setText("Nom d'utilisateur ou mot de passe incorrect ! Réessayez");
                 }
                 statement.close();
                 connection.close();
@@ -109,10 +107,7 @@ public class LoginController implements Initializable {
                 Statement statement = connection.createStatement();
                 String sql = "SELECT * FROM EMPLOYEE_AUTH WHERE username = '" + username.getText() + "' AND password = '" + password.getText() + "'";
                 ResultSet resultSet = statement.executeQuery(sql);
-                // Resultset contains all the username and password
-                // if the username and password from database matches only then intropage loads
                 if (resultSet.next()) {
-                    //load up OTHER FXML document
                     int empid = resultSet.getInt("id");
                     Loader.setLocation(getClass().getResource("../views/intropageemployee.fxml"));
                     try{
@@ -134,8 +129,7 @@ public class LoginController implements Initializable {
                     stage.centerOnScreen();
                     stage.show();
                 } else {
-                    // If username & password doesn't match
-                    isConnected.setText("Username / password is wrong!");
+                    isConnected.setText("Nom d'utilisateur ou mot de passe incorrect ! Réessayez");
                 }
                 statement.close();
                 connection.close();
