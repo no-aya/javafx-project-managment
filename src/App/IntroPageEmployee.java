@@ -2,7 +2,6 @@ package App;
 
 import App.dao.SingletonConnexionDB;
 import App.presentation.controllers.ProjectSummaryController;
-import App.SearchProject.SearchProject;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -182,32 +181,6 @@ public class IntroPageEmployee implements Initializable {
 
             Parent p = Loader.getRoot();
             stage = (Stage) allProjectsBtn.getScene().getWindow();
-            Scene scene = new Scene(p);
-            stage.setScene(scene);
-            stage.show();
-        }
-    }
-
-
-    public void searchProjectBtnAction(ActionEvent event) {
-        if(event.getSource() == searchProjectBtn) {
-            FXMLLoader Loader = new FXMLLoader();
-
-            Loader.setLocation(getClass().getResource("presentation/views/searchproject.fxml"));
-
-            try {
-                Loader.load();
-            } catch (Exception e){
-                e.printStackTrace();
-            }
-
-            SearchProject searchProject = Loader.getController();
-            searchProject.setUserRole(getUserRole());
-            searchProject.setEmployeeId(getEmployeeId());
-            searchProject.initializeSearchPage(getUserRole());
-
-            Parent p = Loader.getRoot();
-            stage = (Stage) searchProjectBtn.getScene().getWindow();
             Scene scene = new Scene(p);
             stage.setScene(scene);
             stage.show();

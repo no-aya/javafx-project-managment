@@ -164,7 +164,7 @@ public class ProjectSummaryController implements Initializable {
                 content.getChildren().add(new Label("Fin: " + enddate));
                 content.getChildren().add(new Label("Temps estimé: " + estitime + " Days"));
                 JFXButton showporject = new JFXButton("Afficher les détails du projet");
-                showporject.setStyle("-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #7a8d9b, #ffbcbc);");
+                showporject.setStyle("-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #7a8d9b, #7a8d9b);");
                 content.getChildren().add(showporject);
 
                 titledpane.setContent(content);
