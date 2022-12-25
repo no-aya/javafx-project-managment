@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09d6005c-1862-4331-a04b-874db6fc47d7" name="Changes" comment="[Add] Log in &amp; Page Admin interface">
+      <change afterPath="$PROJECT_DIR$/Documentation/epmtdb (1).svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Documentation/kanban.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projet.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/Projet.mdj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UseCase.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/Documentation/UseCase.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/IntroPageAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/IntroPageAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/IntroPageEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/IntroPageEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/SearchProject/ProjectEach.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/SearchProject/SearchProject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/SearchProject/searchproject.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/SearchProject/searchproject.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/controllers/ProjectDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/ProjectDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App/presentation/controllers/ProjectSummaryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/controllers/ProjectSummaryController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
@@ -44,6 +42,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="21-diagramme-de-classes" />
+                    <option name="lastUsedInstant" value="1671978498" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="19-remove-search-module" />
                     <option name="lastUsedInstant" value="1671919977" />
@@ -72,6 +74,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
@@ -85,6 +90,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -132,6 +138,7 @@
       <updated>1671814945253</updated>
       <workItem from="1671814951648" duration="321000" />
       <workItem from="1671880930328" duration="16616000" />
+      <workItem from="1671978274561" duration="3154000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] Log in &amp; Page Admin interface">
       <created>1671886416716</created>
@@ -158,6 +165,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="[Add] Log in &amp; Page Admin interface" />
     <option name="LAST_COMMIT_MESSAGE" value="[Add] Log in &amp; Page Admin interface" />
   </component>
