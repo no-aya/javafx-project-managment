@@ -88,7 +88,7 @@ public class IntroPageAdmin implements Initializable {
     private Stage stage;
 
     private void getProjectTableData(){
-        //Clear the all column data from table
+
         projectTableView.getItems().clear();
         projectCount = 0;
 
@@ -154,7 +154,7 @@ public class IntroPageAdmin implements Initializable {
             ResultSet rs = statement.executeQuery(sql);
             while (rs.next()) {
                 employeeCount++;
-                int emId = rs.getInt("id");
+                int emId = rs.getInt("idgit ");
                 String employeeName = rs.getString("name");
                 String employeeDesignation = rs.getString("designation");
 
