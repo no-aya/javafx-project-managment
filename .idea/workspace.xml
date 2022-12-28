@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09d6005c-1862-4331-a04b-874db6fc47d7" name="Changes" comment="[Add] Log in &amp; Page Admin interface">
-      <change afterPath="$PROJECT_DIR$/Documentation/epmtdb (1).svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Documentation/kanban.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/presentation/views/intropageadmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/presentation/views/intropageadmin.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +40,10 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
+                    <option name="branchName" value="5-page-daccueil-admin" />
+                    <option name="lastUsedInstant" value="1672041683" />
+                  </RecentBranch>
+                  <RecentBranch>
                     <option name="branchName" value="21-diagramme-de-classes" />
                     <option name="lastUsedInstant" value="1671978498" />
                   </RecentBranch>
@@ -57,10 +58,6 @@
                   <RecentBranch>
                     <option name="branchName" value="main" />
                     <option name="lastUsedInstant" value="1671902643" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="javaUI" />
-                    <option name="lastUsedInstant" value="1671804122" />
                   </RecentBranch>
                 </list>
               </option>
@@ -88,18 +85,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\aitay\Desktop\javafx-browser\Documentation" />
@@ -125,6 +122,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -139,6 +137,7 @@
       <workItem from="1671814951648" duration="321000" />
       <workItem from="1671880930328" duration="16616000" />
       <workItem from="1671978274561" duration="3154000" />
+      <workItem from="1672041600665" duration="894000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] Log in &amp; Page Admin interface">
       <created>1671886416716</created>
