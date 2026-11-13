@@ -311,7 +311,16 @@ public class ProjectDetailController implements Initializable {
                 String dependency = taskResultSet.getString("dependency");
                 String assigned = taskResultSet.getString("assignedName");
 
-                Task task = new Task(task_name, time, task_start_date, task_end_date, progress, color, dependency, assigned);
+                Task task = new Task.Builder()
+                        .name(task_name)
+                        .time(time)
+                        .startDate(task_start_date)
+                        .endDate(task_end_date)
+                        .progress(progress)
+                        .color(color)
+                        .dependency(dependency)
+                        .assignedName(assigned)
+                        .build();
                 tableview.getItems().add(task);
             }
             taskResultSet.close();
